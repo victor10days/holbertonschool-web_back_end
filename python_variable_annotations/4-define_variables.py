@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Module containing annotated variables."""
+"""Module containing type-annotated variables with specific values."""
 
 a: int = 1
 pi: float = 3.14
