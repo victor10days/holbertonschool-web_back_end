@@ -23,17 +23,13 @@ async def wait_n(n: int, max_delay: int) -> List[float]:
     tasks = [asyncio.create_task(wait_random(max_delay)) for _ in range(n)]
     delays = []
     
-    # Use as_completed to get results as they finish, maintaining order naturally
-    for completed_task in asyncio.as_completed(tasks):
-        delay = await completed_task
-        # Insert delay in the correct position to maintain ascending order
-        inserted = False
-        for i, existing_delay in enumerate(delays):
-            if delay < existing_delay:
-                delays.insert(i, delay)
-                inserted = True
-                break
-        if not inserted:
-            delays.append(delay)
+    # Collect all results as they complete and maintain order naturally
+    for task in asyncio.as_completed(tasks):
+        delay = await task
+        # Insert in proper position to maintain ascending order without sort()
+        pos = 0
+        while pos < len(delays) and delays[pos] < delay:
+            pos += 1
+        delays.insert(pos, delay)
     
     return delays
