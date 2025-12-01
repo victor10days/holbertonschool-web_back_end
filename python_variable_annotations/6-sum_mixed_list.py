@@ -2,13 +2,14 @@
 """Function that sums a list of floats with type annotations.
 Handles lists with mixed types (ints and floats).
 """
+from typing import List, Union
 
 
-def sum_mixed_list(mxd_lst: list[int | float]) -> float:
+def sum_mixed_list(mxd_lst: List[Union[int, float]]) -> float:
     """Sum all the numbers in a list containing both ints and floats.
 
     Args:
-        mxd_lst (list[int | float]): A list of integers and floats to sum.
+        mxd_lst (List[Union[int, float]]): A list of ints and floats to sum.
 
     Returns:
         float: The sum of all numbers in the list.
