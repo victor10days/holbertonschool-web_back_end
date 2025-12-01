@@ -1,41 +1,16 @@
-# Python - Variable Annotations
+# Holberton School - Web Back End
 
-## Description
-This project covers type annotations in Python 3, including how to specify function signatures and variable types, duck typing, and code validation with mypy.
+This repository contains back-end web development projects completed as part of the Holberton School curriculum.
 
-## Resources
-- [Python 3 typing documentation](https://docs.python.org/3/library/typing.html)
-- [MyPy cheat sheet](https://mypy.readthedocs.io/en/stable/cheat_sheet_py3.html)
+## Projects
 
-## Learning Objectives
-At the end of this project, you are expected to be able to explain to anyone, without the help of Google:
+### Python - Variable Annotations
+Type annotations in Python 3, including function signatures, variable types, duck typing, and code validation with mypy.
 
-### General
-- Type annotations in Python 3
-- How you can use type annotations to specify function signatures and variable types
-- Duck typing
-- How to validate your code with mypy
+**Directory**: `python_variable_annotations/`
 
-## Requirements
-### General
-- Allowed editors: `vi`, `vim`, `emacs`
-- All your files will be interpreted/compiled on Ubuntu 20.04 LTS using python3 (version 3.9)
-- All your files should end with a new line
-- The first line of all your files should be exactly `#!/usr/bin/env python3`
-- A `README.md` file, at the root of the folder of the project, is mandatory
-- Your code should use the pycodestyle style (version 2.5.)
-- All your files must be executable
-- The length of your files will be tested using `wc`
-- All your modules should have a documentation
-- All your classes should have a documentation
-- All your functions (inside and outside a class) should have a documentation
-- A documentation is not a simple word, it's a real sentence explaining what's the purpose of the module, class or method
-
-## Project Information
-- **Author**: Emmanuel Turlay, Staff Software Engineer at Cruise
-- **Weight**: 1
-- **Project Type**: Master
+## Author
+Victor Diaz
 
 ## Repository
-- **GitHub repository**: holbertonschool-web_back_end
-- **Directory**: python_variable_annotations
+- **GitHub**: [holbertonschool-web_back_end](https://github.com/victor10days/holbertonschool-web_back_end)
