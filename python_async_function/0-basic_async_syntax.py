@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+"""Module for basic asynchronous syntax demonstration."""
 
 import asyncio
 import random
