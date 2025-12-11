@@ -1,25 +1,41 @@
 # NoSQL - MongoDB Project
 
-This project covers the fundamentals of NoSQL databases with a focus on MongoDB.
+This project covers the fundamentals of NoSQL databases, specifically MongoDB, including basic operations like creating databases, inserting, updating, deleting, and querying data.
 
 ## Learning Objectives
 
-- Understanding NoSQL databases
+- Understanding what NoSQL means
 - Difference between SQL and NoSQL
-- ACID properties
+- Understanding ACID properties
 - Document storage concepts
-- Working with MongoDB
-- CRUD operations in MongoDB
-- Aggregation pipelines
-- Using PyMongo with Python
+- NoSQL database types
+- Benefits of NoSQL databases
+- Querying, inserting, updating, and deleting data in NoSQL databases
+- Using MongoDB
 
 ## Requirements
 
-- MongoDB 4.4
-- Python 3.9
-- PyMongo 4.8.0
-- Ubuntu 20.04 LTS
+### MongoDB Command Files
+- All files interpreted/compiled on Ubuntu 20.04 LTS using MongoDB (version 4.4)
+- All files should end with a new line
+- First line should be a comment: `// my comment`
 
-## Files
+### Python Scripts
+- All files interpreted/compiled on Ubuntu 20.04 LTS using python3 (version 3.9) and PyMongo (version 4.8.0)
+- All files should end with a new line
+- First line: `#!/usr/bin/env python3`
+- Code should use pycodestyle (version 2.5.*)
+- All modules and functions should have documentation
+- Code should not execute when imported
 
-- `0-list_databases` - Lists all databases in MongoDB
+## Tasks
+
+### 0. List all databases
+Script that lists all databases in MongoDB.
+
+### 1. Create a database
+Script that creates or uses the database `my_db`.
+
+## Author
+
+Holberton School Project
