@@ -1,4 +1,4 @@
-import { taskFirst, taskNext } from './0-constants';
+import { taskFirst, taskNext } from './0-constants.js';
 
 describe('Task 0 - const and let', () => {
   test('taskFirst returns the correct string', () => {
