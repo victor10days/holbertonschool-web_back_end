@@ -61,8 +61,7 @@ npm run dev 0-main.js
 - Configuration files:
   - [babel.config.js](babel.config.js) - Babel configuration
   - [.eslintrc.js](.eslintrc.js) - ESLint configuration
-  - [jest.config.js](jest.config.js) - Jest test configuration
-  - [package.json](package.json) - Project dependencies
+  - [package.json](package.json) - Project dependencies and Jest configuration
 
 - Task files:
   - [0-constants.js](0-constants.js) - Working with `const` and `let`
