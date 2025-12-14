@@ -32,6 +32,30 @@ npm install
    - ESLint for code quality checks
    - Jest for running tests
 
+## Usage
+
+Run JavaScript files using Babel:
+```bash
+npm run dev <filename>
+```
+
+Run tests:
+```bash
+npm test
+```
+
+Run linting:
+```bash
+npm run lint
+```
+
+## Example
+
+```bash
+npm run dev 0-main.js
+# Output: I prefer const when I can. But sometimes let is okay
+```
+
 ## Project Structure
 
 - Configuration files:
