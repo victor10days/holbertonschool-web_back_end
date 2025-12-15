@@ -13,6 +13,6 @@ export default class Currency{
     }
 }
 
-export default function displayFullCurrency(currency){
+export function displayFullCurrency(currency){
     return `${currency.name} (${currency.code})`;
 }
