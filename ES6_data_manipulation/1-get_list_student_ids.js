@@ -4,4 +4,7 @@ export default function getListStudentIds() {
         { id: 2, firstName: 'James', location: 'Columbia' },
         { id: 5, firstName: 'Serena', location: 'San Francisco' },
     ].map((student) => student.id);
+    if (!Array.isArray(students)) {
+        return [];
     }
+}
