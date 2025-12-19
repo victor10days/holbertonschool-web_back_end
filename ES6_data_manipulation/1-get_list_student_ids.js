@@ -1,10 +1,6 @@
-export default function getListStudentIds() {
-    return [
-        { id: 1, firstName: 'Guillaume', location: 'San Francisco' },
-        { id: 2, firstName: 'James', location: 'Columbia' },
-        { id: 5, firstName: 'Serena', location: 'San Francisco' },
-    ].map((student) => student.id);
-    if (!Array.isArray(students)) {
-        return [];
-    }
+export default function getListStudentIds(students) {
+  if (!Array.isArray(students)) {
+    return [];
+  }
+  return students.map((student) => student.id);
 }
