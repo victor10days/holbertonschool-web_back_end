@@ -50,7 +50,7 @@ const app = http.createServer((req, res) => {
             res.end(header + report);
         })
         .catch((err) => {
-            res.end(err.message);
+            res.end(header + err.message);
         });
     } else {
         res.end('Hello Holberton School!');
