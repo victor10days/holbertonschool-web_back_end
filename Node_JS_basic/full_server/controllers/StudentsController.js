@@ -1,4 +1,4 @@
-import { readDatabase } from '../utils.js';
+import readDatabase from '../utils';
 
 export default class StudentsController {
   static async getAllStudents(req, res) {
@@ -6,10 +6,13 @@ export default class StudentsController {
       const students = await readDatabase(process.argv[2]);
       let response = 'This is the list of our students\n';
 
-      const sortedFields = Object.keys(students).sort((a, b) => a.toLowerCase().localeCompare(b.toLowerCase()));
+      const sortedFields = Object.keys(students).sort((a, b) => (
+        a.toLowerCase().localeCompare(b.toLowerCase())
+      ));
 
       for (const field of sortedFields) {
-        response += `Number of students in ${field}: ${students[field].length}. List: ${students[field].join(', ')}\n`;
+        const studentList = students[field].join(', ');
+        response += `Number of students in ${field}: ${students[field].length}. List: ${studentList}\n`;
       }
 
       res.status(200).send(response.trim());
